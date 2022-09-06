@@ -1,9 +1,13 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Receitas extends Conta {
 
     private double novaReceita;
     private double receitaMensal;
     private double receitaAnual;
 
+    private List<Conta> counte = new ArrayList<>();
    public Receitas (){
 
    }
@@ -19,6 +23,11 @@ public class Receitas extends Conta {
         this.novaReceita = novaReceita;
         this.receitaMensal = receitaMensal;
         this.receitaAnual = receitaAnual;
+    }
+
+    public double calcularTotal() {
+        return novaReceita += saldo;
+
     }
 
     public double getNovaReceita() {

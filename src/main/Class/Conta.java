@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Conta extends Cadastro{
 
-    private double saldo;
+    protected double saldo;
     private double receitas;
     private double despesas;
 
@@ -36,6 +36,7 @@ public class Conta extends Cadastro{
     }
 
     public void remover(Receitas receitas){
+
         receita.remove(receitas);
     }
     public void adicionar(Despesas despesas){
@@ -46,9 +47,6 @@ public class Conta extends Cadastro{
     public void remover(Despesas despesas){
 
         despesa.remove(despesas);
-    }
-    public void editar(Despesas despesa){
-        despesa.edit(despesas);
     }
 
     public double getSaldo() {
