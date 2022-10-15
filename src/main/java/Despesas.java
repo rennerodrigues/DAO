@@ -8,7 +8,7 @@ public class Despesas extends Conta {
     private double agua;
     private Calendar dataDespesa;
 
-    public Despesas (){
+    public Despesas() {
 
     }
 
@@ -31,12 +31,49 @@ public class Despesas extends Conta {
     }
 
     public double calcularTotal() {
-        return novaReceita -= saldo;
+        return saldo = saldo - gerais - cartao - energia - agua;
 
     }
 
+    public double getGerais() {
+        return gerais;
+    }
 
-    public double calcularTotal(){
-        return
+    public void setGerais(double gerais) {
+        this.gerais = gerais;
+    }
+
+    public double getCartao() {
+        return cartao;
+    }
+
+    public void setCartao(double cartao) {
+        this.cartao = cartao;
+    }
+
+    public double getEnergia() {
+        return energia;
+    }
+
+    public void setEnergia(double energia) {
+        this.energia = energia;
+    }
+
+    public double getAgua() {
+        return agua;
+    }
+
+    public void setAgua(double agua) {
+        this.agua = agua;
+    }
+
+    public Calendar getDataDespesa() {
+        return dataDespesa;
+    }
+
+    public void setDataDespesa(Calendar dataDespesa) {
+        this.dataDespesa = dataDespesa;
     }
 }
+
+

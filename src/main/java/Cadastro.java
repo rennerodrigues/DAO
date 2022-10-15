@@ -3,6 +3,7 @@ import java.util.List;
 
 public class Cadastro {
 
+    private Integer id;
     private String nome;
     private String email;
     private String telefone;
@@ -36,6 +37,15 @@ public class Cadastro {
     }
 
     //getters e setters
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -90,5 +100,13 @@ public class Cadastro {
 
     public void setConta(int conta) {
         this.conta = conta;
+    }
+
+    public List<Conta> getCount() {
+        return count;
+    }
+
+    public void setCount(List<Conta> count) {
+        this.count = count;
     }
 }
